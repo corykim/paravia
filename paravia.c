@@ -131,7 +131,7 @@ int main(void) {
 
 /* Return a random number in the range [0, hi] */
 int Random(int hi) {
-    return (int)(rand() / RAND_MAX * hi);
+    return (int)((double)rand() / RAND_MAX * hi);
 }
 
 void InitializePlayer(Player *Me, int year, int city, int level, char *name, bool isMale) {
